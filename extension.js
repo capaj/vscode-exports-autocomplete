@@ -1,15 +1,17 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import vscode, {
+const vscode = require('vscode')
+const {
   // TextDocument,
   Position,
   // CancellationToken,
   CompletionItem,
   workspace,
-  TextEdit } from 'vscode'
-import getExportsFromFile from 'get-exports-from-file'
-import walk from 'walk'
-import path from 'path'
+  TextEdit } = vscode
+
+const getExportsFromFile = require('get-exports-from-file')
+const walk = require('walk')
+const path = require('path')
 const exportsInProject = new Map()
 
 class ExportersCompletionItemProvider {
@@ -81,14 +83,18 @@ function reactToWatcher (watcher) {
 reactToWatcher(jsWatcher)
 reactToWatcher(jsxWatcher)
 
-export function activate (context) {
+function activate (context) {
   const dispAutocomplete = vscode.languages.registerCompletionItemProvider(['javascript', 'javascriptreact'], new ExportersCompletionItemProvider())
 
   context.subscriptions.push(dispAutocomplete)
 }
-exports.activate = activate
 
-export function deactivate () {
+function deactivate () {
   jsWatcher.dispose()
   jsxWatcher.dispose()
+}
+
+module.exports = {
+  activate,
+  deactivate
 }
