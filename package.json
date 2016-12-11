@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "vscode-exports-autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -35,10 +35,6 @@
   "devDependencies": {
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-es2016": "^6.16.0",
-    "babel-preset-es2017": "^6.16.0",
-    "babel-register": "^6.18.0",
     "mocha": "^2.5.3",
     "standard": "^8.6.0",
     "typescript": "^2.0.3",
