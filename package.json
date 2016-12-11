@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "vscode-exports-autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -11,16 +11,12 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
   ],
   "main": "./bootstrap",
   "contributes": {
-    "commands": [
-      {
-        "command": "extension.sayHello",
-        "title": "Hello World"
-      }
-    ]
+
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
@@ -39,6 +35,8 @@
     "vscode": "^1.0.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.20.0"
+    "babel-polyfill": "^6.20.0",
+    "get-exports-from-file": "^0.2.0",
+    "walk": "^2.3.9"
   }
 }
