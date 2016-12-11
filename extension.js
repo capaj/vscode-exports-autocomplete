@@ -88,7 +88,6 @@ export function activate (context) {
 }
 exports.activate = activate
 
-
 export function deactivate () {
   jsWatcher.dispose()
   jsxWatcher.dispose()
