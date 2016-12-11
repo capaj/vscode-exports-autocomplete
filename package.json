@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "vscode-exports-autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -18,6 +18,16 @@
   "contributes": {
 
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/vscode-exports-autocomplete.git"
+  },
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/vscode-exports-autocomplete/issues"
+  },
+  "homepage": "https://github.com/capaj/vscode-exports-autocomplete#readme",
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
     "pretest": "standard"
