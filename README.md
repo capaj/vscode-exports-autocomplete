@@ -1,5 +1,7 @@
 # vscode-component-autocomplete README
 
+[![Marketplace Version](http://vsmarketplacebadge.apphb.com/version/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete) [![Installs](http://vsmarketplacebadge.apphb.com/installs/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete) [![Rating](http://vsmarketplacebadge.apphb.com/rating/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete)
+
 ## Showcase
 
 ![showcase](images/showcase.gif)
