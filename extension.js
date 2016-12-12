@@ -13,6 +13,16 @@ const getExportsFromFile = require('get-exports-from-file')
 const walk = require('walk')
 const path = require('path')
 const exportsInProject = new Map()
+const fs = require('fs')
+let usesStandard = true
+
+fs.readFile(path.join(workspace.rootPath, 'package.json'), 'utf8', (err, pckgStr) => {
+  if (err) {}
+  const pckg = JSON.parse(pckgStr)
+  if (!pckg.devDependencies.standard) {
+    usesStandard = false
+  }
+})
 
 class ExportersCompletionItemProvider {
   provideCompletionItems (document, position, token) {
@@ -32,7 +42,15 @@ class ExportersCompletionItemProvider {
           if (relPath.indexOf('.') === -1) {
             relPath = './' + relPath
           }
-          ci.additionalTextEdits = [TextEdit.insert(new Position(0, 0), `import ${ex.name} from '${relPath}'\n`)]
+          let lineEnding = '\n'
+          if (!usesStandard) {
+            lineEnding = ';\n'
+          }
+          let importToken = ex.name
+          if (ex.exported !== 'default') {
+            importToken = `{${ex.name}}`
+          }
+          ci.additionalTextEdits = [TextEdit.insert(new Position(0, 0), `import ${importToken} from '${relPath}'${lineEnding}`)]
           completions.push(ci)
         })
       }
