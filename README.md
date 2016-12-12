@@ -1,6 +1,6 @@
-# vscode-component-autocomplete README
+# vscode-exports-autocomplete
 
-[![Marketplace Version](http://vsmarketplacebadge.apphb.com/version/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete) [![Installs](http://vsmarketplacebadge.apphb.com/installs/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete) [![Rating](http://vsmarketplacebadge.apphb.com/rating/capaj.vscode-component-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-component-autocomplete)
+[![Marketplace Version](http://vsmarketplacebadge.apphb.com/version/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) [![Installs](http://vsmarketplacebadge.apphb.com/installs/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) [![Rating](http://vsmarketplacebadge.apphb.com/rating/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete)
 
 ## Showcase
 
