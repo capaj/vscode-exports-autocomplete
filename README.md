@@ -1,8 +1,13 @@
 # vscode-component-autocomplete README
 
+## Showcase
+
+![showcase](images/showcase.gif)
+
+Of course it works even with huge projects which contain thousands of JS files.
 
 ## Features
-Collects ES6 exports from your whole project and autocompletes them. Upon completion, item is also imported using a relative path.
+Collects ES6 exports from your whole project and autocompletes them. Upon completion, item is also imported using a relative path. Import is placed after last import in that file. Import ends with a semicolon unless you have a `standard` package in your `package.json` devDependencies.
 
 ## Extension Settings
 
