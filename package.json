@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "vscode-exports-autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"

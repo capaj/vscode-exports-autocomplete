@@ -1,5 +1,3 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode')
 const {
   // TextDocument,
@@ -15,6 +13,7 @@ const path = require('path')
 const exportsInProject = new Map()
 const fs = require('fs')
 let usesStandard = true
+const countOccurences = require('./count-occurences')
 
 fs.readFile(path.join(workspace.rootPath, 'package.json'), 'utf8', (err, pckgStr) => {
   if (err) {}
@@ -27,6 +26,12 @@ fs.readFile(path.join(workspace.rootPath, 'package.json'), 'utf8', (err, pckgStr
 class ExportersCompletionItemProvider {
   provideCompletionItems (document, position, token) {
     const editorText = document.getText()
+    let positionForNewImport = new Position(0, 0)
+    const lastImportIndex = editorText.lastIndexOf('\nimport ')
+    if (lastImportIndex !== -1) {
+      const importsCount = countOccurences(editorText.substr(0, lastImportIndex), '\n')
+      positionForNewImport = new Position(importsCount + 2, 0)
+    }
     const completions = []
     const thisDocumentFileName = document.fileName
     exportsInProject.forEach((fileExports, fileName) => {
@@ -50,7 +55,7 @@ class ExportersCompletionItemProvider {
           if (ex.exported !== 'default') {
             importToken = `{${ex.name}}`
           }
-          ci.additionalTextEdits = [TextEdit.insert(new Position(0, 0), `import ${importToken} from '${relPath}'${lineEnding}`)]
+          ci.additionalTextEdits = [TextEdit.insert(positionForNewImport, `import ${importToken} from '${relPath}'${lineEnding}`)]
           completions.push(ci)
         })
       }
