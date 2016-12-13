@@ -1,1 +1,1 @@
-module.exports = require('./extension')
+module.exports = require('./lib/extension')
