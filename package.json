@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -39,6 +39,8 @@
     "vscode": "^1.0.0"
   },
   "dependencies": {
+    "babel-traverse": "^6.20.0",
+    "babylon": "^6.14.1",
     "get-exports-from-file": "^0.3.1",
     "klaw": "^1.3.1"
   }
