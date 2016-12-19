@@ -2,14 +2,19 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes exports from your project",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
   },
+  "galleryBanner": {
+    "color": "#f5da55ff",
+    "theme": "dark"
+  },
   "categories": [
     "Other"
   ],
+  "icon": "/images/icon.svg",
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:javascriptreact"
