@@ -15,14 +15,13 @@
     "Other"
   ],
   "keywords": [
-    "es6",
     "javascript",
     "modules",
     "imports",
     "exports",
     "auto import"
   ],
-  "icon": "/images/icon.png",
+  "icon": "images/icon.png",
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:javascriptreact"
