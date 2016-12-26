@@ -1,14 +1,14 @@
 {
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
-  "description": "autocompletes exports from your project",
-  "version": "0.2.5",
+  "description": "autocompletes javascript module exports from your project",
+  "version": "0.2.6",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
   },
   "galleryBanner": {
-    "color": "#f5da55ff",
+    "color": "#f5da55",
     "theme": "dark"
   },
   "categories": [
