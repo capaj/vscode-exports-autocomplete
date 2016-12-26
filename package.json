@@ -22,7 +22,7 @@
     "exports",
     "auto import"
   ],
-  "icon": "/images/icon.svg",
+  "icon": "/images/icon.png",
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:javascriptreact"
