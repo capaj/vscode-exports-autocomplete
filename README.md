@@ -17,6 +17,7 @@ We also parse ES6 files in node_modules-just the roots. For example if you have 
 
 ## Extension Settings
 
-This extension will have the following settings(WIP-not implemented yet):
+This extension will have the following settings:
 
-* `componentsAutocomplete.enable`: enable/disable this extension
+* `vscode-exports-autocomplete.enable`: enable/disable this extension
+* `vscode-exports-autocomplete.cacheSizeLimit`: size limit for the cache of parsed exports, parsed with bytes npm package, shared among all projects, default "25MB"

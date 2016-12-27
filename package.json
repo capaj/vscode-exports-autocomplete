@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -27,7 +27,24 @@
     "onLanguage:javascriptreact"
   ],
   "main": "./bootstrap",
-  "contributes": {},
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "vscode-exports-autocomplete",
+      "properties": {
+        "vscode-exports-autocomplete.cacheSizeLimit": {
+          "type": "string",
+          "default": "25MB",
+          "description": "size limit for the cache of parsed exports, shared among all projects"
+        },
+        "vscode-exports-autocomplete.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "it might be useful to disable when better performance is higher priority"
+        }
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/capaj/vscode-exports-autocomplete.git"
