@@ -15,6 +15,18 @@ Of course it works even with huge projects which contain thousands of JS files. 
 
 We also parse ES6 files in node_modules-just the roots. For example if you have redux package in your `dependencies`, we will parse [this file](https://github.com/reactjs/redux/blob/master/src/index.js) giving us exactly the exports we want. So if you're a lib author, don't forget to add `module` property to your package.json.
 
+## Usage inside JSX
+
+Since VSCode does have it's own JSX support, there are some usability choices made to complement that.
+
+If you're writing a component WITH children, you need to write a pair. Utilize a vscode's feature that will make any text into a JSX opening and closing pair. Like this:
+
+TODO add gif
+
+If you're writing a component WITHOUT children, start by typing `<`. When you choose autocomplete, plugin will automatically close the tag for you. Like this:
+
+TODO add gif
+
 ## Extension Settings
 
 This extension will have the following settings:
