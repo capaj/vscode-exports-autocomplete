@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -57,15 +57,22 @@
   "homepage": "https://github.com/capaj/vscode-exports-autocomplete#readme",
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "pretest": "standard"
+    "pretest": "standard",
+    "test": "node ./node_modules/vscode/bin/test && ava"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
-    "mocha": "^2.5.3",
+    "ava": "^0.17.0",
+    "mocha": "^3.2.0",
     "standard": "^8.6.0",
     "typescript": "^2.0.3",
     "vscode": "^1.0.0"
+  },
+  "ava": {
+    "files": [
+      "lib/**/*.spec.js"
+    ]
   },
   "dependencies": {
     "babel-traverse": "^6.20.0",
