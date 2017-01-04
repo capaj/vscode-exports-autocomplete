@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -36,6 +36,11 @@
           "type": "string",
           "default": "25MB",
           "description": "size limit for the cache of parsed exports, shared among all projects"
+        },
+        "vscode-exports-autocomplete.indentationOverride": {
+          "type": "string",
+          "default": null,
+          "description": "if truthy, generated import statements will be indented using this string"
         },
         "vscode-exports-autocomplete.enable": {
           "type": "boolean",
