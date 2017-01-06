@@ -19,7 +19,7 @@ We also parse ES6 files in node_modules-just the roots. For example if you have 
 
 Since VSCode does have it's own JSX support, there are some usability choices made to complement that.
 
-If you're writing a component WITH children, you need to write a pair. Utilize a vscode's feature that will make any text into a JSX opening and closing pair. Like this:
+If you're writing a component WITH children, you need to write a pair. Utilize a vscode's feature that will make any text into a JSX opening and closing pair when you hit a TAB key. Like this:
 
 TODO add gif
 
