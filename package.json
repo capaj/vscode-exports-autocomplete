@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -46,6 +46,11 @@
           "type": "boolean",
           "default": true,
           "description": "it might be useful to disable when better performance is higher priority"
+        },
+        "vscode-exports-autocomplete.quoteCharOverride": {
+          "type": "string",
+          "default": null,
+          "description": "this allows to override the import style and force the imports to use this string as quotes"
         }
       }
     }
@@ -87,6 +92,7 @@
     "keep-it-small": "^0.1.0",
     "klaw": "^1.3.1",
     "mkdirp": "^0.5.1",
+    "mock-require": "^2.0.1",
     "mz": "^2.6.0"
   }
 }
