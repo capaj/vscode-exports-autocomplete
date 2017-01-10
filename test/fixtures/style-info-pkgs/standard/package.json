@@ -1,0 +1,5 @@
+{
+    "name": "pkg-with-eslint",
+    "version": "0",
+    "devDependencies": { "standard": "*" }
+}
