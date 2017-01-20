@@ -6,9 +6,9 @@
   version "2.2.35"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.35.tgz#dd3150b62a6de73368109308515c3aa86f81f1ec"
 
-"@types/node@^6.0.40":
-  version "6.0.55"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.55.tgz#e5cb679a43561f42afd1bd6d58d3992ec8f31720"
+"@types/node@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.0.tgz#c081147b109da5f9c57af70571771be97ce9c0ba"
 
 abbrev@1:
   version "1.0.9"
@@ -2501,6 +2501,10 @@ jade@0.26.3:
   dependencies:
     commander "0.6.1"
     mkdirp "0.3.0"
+
+jest-changed-files@^17.0.2:
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-17.0.2.tgz#f5657758736996f590a51b87e5c9369d904ba7b7"
 
 jodid25519@^1.0.0:
   version "1.0.2"
