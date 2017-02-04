@@ -1839,9 +1839,9 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-get-exports-from-file@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/get-exports-from-file/-/get-exports-from-file-0.3.1.tgz#2222d5d3c0388a2397914d54f3a7d33de55eabee"
+get-exports-from-file@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/get-exports-from-file/-/get-exports-from-file-0.4.2.tgz#9fadc178f7b9da6992ae89544bd0912e5446d59f"
   dependencies:
     babel-traverse "^6.20.0"
     babylon "^6.14.1"
@@ -1909,7 +1909,7 @@ glob@3.2.11:
     inherits "2"
     minimatch "0.3"
 
-glob@7.0.5:
+glob@7.0.5, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.0.5.tgz#b4202a69099bbb4d292a7c1b95b6682b67ebdc95"
   dependencies:
@@ -1930,7 +1930,7 @@ glob@^5.0.15, glob@^5.0.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
+glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
