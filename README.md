@@ -32,6 +32,7 @@ TODO add gif
 This extension has the following settings:
 
 * `vscode-exports-autocomplete.enable`: enable/disable this extension
+* `vscode-exports-autocomplete.enableNpmDependencies`: set this to false when you're annoyed by the stuff you get from your npm modules
 * `vscode-exports-autocomplete.indentationOverride`: string to be used when indenting, default is two spaces, for doublequote use "\""
 * `vscode-exports-autocomplete.quoteCharOverride`: string to be used when writing string literals, default is single quote
 * `vscode-exports-autocomplete.cacheSizeLimit`: size limit for the cache of parsed exports, parsed with bytes npm package, shared among all projects, default "25MB"

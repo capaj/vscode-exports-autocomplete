@@ -47,6 +47,11 @@
           "default": true,
           "description": "it might be useful to disable when better performance is higher priority"
         },
+        "vscode-exports-autocomplete.enableNpmDependencies": {
+          "type": "boolean",
+          "default": true,
+          "description": "set this to false when you're annoyed by the stuff you get from your npm modules"
+        },
         "vscode-exports-autocomplete.quoteCharOverride": {
           "type": "string",
           "default": null,
