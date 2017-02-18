@@ -55,6 +55,11 @@
         "vscode-exports-autocomplete.quoteCharOverride": {
           "type": "string",
           "default": null,
+          "enum": [
+            "'",
+            "\"",
+            "`"
+          ],
           "description": "this allows to override the import style and force the imports to use this string as quotes"
         }
       }
