@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -59,6 +59,11 @@
           "default": true,
           "description": "set this to false when you're annoyed by the stuff you get from your npm modules"
         },       
+        "vscode-exports-autocomplete.minimumWordLengthToImportOnPaste": {
+          "type": "number",
+          "default": 3,
+          "description": "set this to a higher value if 'on paste' is too aggressive for you"
+        },
         "vscode-exports-autocomplete.addImportsOnPaste": {
           "type": "boolean",
           "default": true,
