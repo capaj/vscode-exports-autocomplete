@@ -15,7 +15,7 @@ Of course it works even with huge projects which contain thousands of JS files. 
 
 We also parse ES6 files in node_modules-just the roots. For example if you have redux package in your `dependencies`, we will parse [this file](https://github.com/reactjs/redux/blob/master/src/index.js) giving us exactly the exports we want. So if you're a lib author, don't forget to add `module` property to your package.json.
 
-Another nifty feature is adding imports when you copy a block of code, see:
+Another nifty feature is adding imports when you paste some code, see:
 
 ![adding on paste](images//add-imports-on-paste.gif)
 
