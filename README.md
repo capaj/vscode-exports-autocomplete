@@ -15,6 +15,10 @@ Of course it works even with huge projects which contain thousands of JS files. 
 
 We also parse ES6 files in node_modules-just the roots. For example if you have redux package in your `dependencies`, we will parse [this file](https://github.com/reactjs/redux/blob/master/src/index.js) giving us exactly the exports we want. So if you're a lib author, don't forget to add `module` property to your package.json.
 
+Another nifty feature is adding imports when you copy a block of code, see:
+
+![adding on paste](images//add-imports-on-paste.gif)
+
 ## Usage inside JSX
 
 Since VSCode does have it's own JSX support, there are some usability choices made to complement that.
@@ -32,6 +36,7 @@ TODO add gif
 This extension has the following settings:
 
 * `vscode-exports-autocomplete.enable`: enable/disable this extension
+* `vscode-exports-autocomplete.addImportsOnPaste`: set this to false when you're annoyed by import tokens being added on paste
 * `vscode-exports-autocomplete.enableNpmDependencies`: set this to false when you're annoyed by the stuff you get from your npm modules
 * `vscode-exports-autocomplete.indentationOverride`: string to be used when indenting, default is two spaces, for doublequote use "\""
 * `vscode-exports-autocomplete.quoteCharOverride`: string to be used when writing string literals, default is single quote
