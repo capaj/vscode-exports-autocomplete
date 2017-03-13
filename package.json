@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -117,5 +117,8 @@
     "mkdirp": "^0.5.1",
     "mock-require": "^2.0.1",
     "mz": "^2.6.0"
+  },
+  "standard": {
+    "ignore": ["**/fixtures/**"]
   }
 }

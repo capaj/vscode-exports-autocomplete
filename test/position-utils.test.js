@@ -19,4 +19,3 @@ test('converts positions', function () {
     line: 5
   })
 })
-
