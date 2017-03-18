@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -58,7 +58,7 @@
           "type": "boolean",
           "default": true,
           "description": "set this to false when you're annoyed by the stuff you get from your npm modules"
-        },       
+        },
         "vscode-exports-autocomplete.minimumWordLengthToImportOnPaste": {
           "type": "number",
           "default": 3,
@@ -115,6 +115,7 @@
     "babel-traverse": "^6.23.1",
     "babylon": "^6.16.1",
     "co": "^4.6.0",
+    "esprima-undeclared-identifiers": "^0.3.0",
     "get-exports-from-file": "^0.4.3",
     "jest-changed-files": "^19.0.2",
     "keep-it-small": "^0.1.0",
@@ -124,6 +125,8 @@
     "mz": "^2.6.0"
   },
   "standard": {
-    "ignore": ["**/fixtures/**"]
+    "ignore": [
+      "**/fixtures/**"
+    ]
   }
 }

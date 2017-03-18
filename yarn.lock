@@ -1307,7 +1307,14 @@ espree@^3.4.0:
     acorn "4.0.4"
     acorn-jsx "^3.0.0"
 
-esprima@^2.6.0:
+esprima-undeclared-identifiers@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/esprima-undeclared-identifiers/-/esprima-undeclared-identifiers-0.2.0.tgz#188792ed40bb20ca2e4fbe4041e226cb6d08e231"
+  dependencies:
+    esprima "^2.7.2"
+    estraverse "^4.2.0"
+
+esprima@^2.6.0, esprima@^2.7.2:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
@@ -3471,13 +3478,13 @@ sort-keys@^1.1.1:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-map-support@^0.4.0, source-map-support@^0.4.2:
+source-map-support@^0.4.0:
   version "0.4.8"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.8.tgz#4871918d8a3af07289182e974e32844327b2e98b"
   dependencies:
     source-map "^0.5.3"
 
-source-map-support@^0.4.11:
+source-map-support@^0.4.11, source-map-support@^0.4.2:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.11.tgz#647f939978b38535909530885303daf23279f322"
   dependencies:
