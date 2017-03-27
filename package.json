@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -114,8 +114,8 @@
   "dependencies": {
     "babel-traverse": "^6.23.1",
     "babylon": "^6.16.1",
+    "babylon-undeclared-identifiers": "^1.0.0",
     "co": "^4.6.0",
-    "esprima-undeclared-identifiers": "^0.3.1",
     "get-exports-from-file": "^0.4.3",
     "jest-changed-files": "^19.0.2",
     "keep-it-small": "^0.1.0",
