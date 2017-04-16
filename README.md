@@ -38,9 +38,10 @@ This extension has the following settings:
 * `vscode-exports-autocomplete.enable`: enable/disable this extension
 * `vscode-exports-autocomplete.addImportsOnPaste`: set this to false when you're annoyed by import tokens being added on paste
 * `vscode-exports-autocomplete.minimumWordLengthToImportOnPaste`: set this to a higher value if 'on paste' is too aggressive for you
-* `vscode-exports-autocomplete.enableNpmDependencies`: set this to false when you're annoyed by the stuff you get from your npm modules
-* `vscode-exports-autocomplete.indentationOverride`: string to be used when indenting, default is two spaces, for doublequote use "\""
-* `vscode-exports-autocomplete.quoteCharOverride`: string to be used when writing string literals, default is single quote
+* `vscode-exports-autocomplete.enableNpmDependencies`: set this to false when you're annoyed by the stuff you get from your npm modules*
+* `vscode-exports-autocomplete.addSpacingAroundCurlyBraces`: set this to true when you prefer spaces around curly braces
+* `vscode-exports-autocomplete.indentationOverride`: string to be used when indenting, default is two spaces,
+* `vscode-exports-autocomplete.quoteCharOverride`: string to be used when writing string literals, default is single quote, for doublequote use "\""
 * `vscode-exports-autocomplete.cacheSizeLimit`: size limit for the cache of parsed exports, parsed with bytes npm package, shared among all projects, default "25MB"
 
 You need to restart VSCode for the changes to take effect.

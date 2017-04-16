@@ -2,7 +2,7 @@
   "name": "vscode-exports-autocomplete",
   "displayName": "exports autocomplete",
   "description": "autocompletes javascript module exports from your project",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "publisher": "capaj",
   "engines": {
     "vscode": "^1.5.0"
@@ -47,7 +47,7 @@
         "vscode-exports-autocomplete.indentationOverride": {
           "type": "string",
           "default": null,
-          "description": "if truthy, generated import statements will be indented using this string"
+          "description": "generated import statements will always be indented using this string if it is set"
         },
         "vscode-exports-autocomplete.enable": {
           "type": "boolean",
@@ -68,6 +68,11 @@
           "type": "boolean",
           "default": true,
           "description": "set this to false when you don't want to have imports added on pasting code"
+        },
+        "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": {
+          "type": "boolean",
+          "default": false,
+          "description": "set this to true when you prefer spaces around curly braces"
         },
         "vscode-exports-autocomplete.quoteCharOverride": {
           "type": "string",
