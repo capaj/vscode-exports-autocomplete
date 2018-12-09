@@ -1,3 +1,7 @@
+# Deprecation notice
+
+Since publishing this extensions the same functionality was added into vscode core so this extension in not needed anymore. Actually it's undesirable because vscode's implementation is faster. 
+
 # vscode-exports-autocomplete
 
 [![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) [![Installs](https://vsmarketplacebadge.apphb.com/installs/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) [![Rating](https://vsmarketplacebadge.apphb.com/rating/capaj.vscode-exports-autocomplete.svg)](https://marketplace.visualstudio.com/items?itemName=capaj.vscode-exports-autocomplete) [![Build Status](https://travis-ci.org/capaj/vscode-exports-autocomplete.svg?branch=master)](https://travis-ci.org/capaj/vscode-exports-autocomplete)
